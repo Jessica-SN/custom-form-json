@@ -1,0 +1,38 @@
+.tabsWrapper
+  width: 90%
+  margin: 0 auto
+  max-width: 60rem
+
+  .header
+    display: flex
+
+    .tabButton
+      border-radius: 0
+      border-color: #E9ECEF
+      background-color: #E9ECEF
+      
+      &:disabled
+        color: #fff
+        border-color: #208B3A
+        background-color: #208B3A
+
+  .itemsWrapper
+    gap: 1rem
+    height: 100%
+    display: flex
+    flex-flow: row wrap
+    background-color: #F8F9FA 
+
+    .tabContent
+      flex: 1
+      width: 50%
+      min-width: 20rem
+      padding: 1.5rem
+      box-sizing: border-box
+      border: 1px solid #208B3A
+
+    .isActive
+      display: block
+
+    .isHidden
+      display: none
