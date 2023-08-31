@@ -53,7 +53,7 @@ export default function App() {
   );
 
   const onApplyChanges = (form: FormFields) => {
-    if (!!form.items) {
+    if (form.items) {
       const validFormItem = form.items.map((item) => ({
         ...item,
         id: item.id = _generateItemId()
